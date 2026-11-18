@@ -1,8 +1,85 @@
 /*GERAL E VARIÁVEIS*/
+:root{
+    --cor-fundo: #050505;
+    --cor-fundo-interno: #0A0F1F;
+    --cor-destaqueBtn: #0055FF;
+    --cor-destaqueBorda: #00AAFF;
+    --cor-titulo: #FFFFFF;
+    --cor-paragrafo: #F5F5F5;
+}
 
+body{
+background-image: url("images/fundoBody.jpeg");
+margin: 0;
+padding: 0;    
+}
+main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
 
 /*MOBILE*/
 
+/*HEADER*/
+
+header{
+    background-color:var(--cor-fundo) ;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    padding: 5px 15px;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+header h3{
+    color: var(--cor-destaqueBtn);
+}
+header h3 span{
+    color: var(--cor-titulo);
+}
+header nav{
+    position: absolute;
+    top: 100%;
+    right: 15px;
+}
+header nav ul{
+    list-style: none;
+    margin: 5px 0px;
+    padding: 0;
+}
+
+/*INICIO*/
+
+#inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+#hero{
+    display: grid;
+    grid-template-columns: subgrid;
+    justify-items: center;
+    background-color: aqua;
+}
+
+#imgLogo{
+    background-image: url("images/euPerfilComercial.jpeg");
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+}
+
+/*SOBRE*/
+
+/*PROJETOS*/
+
+/*CONTATO*/
+
+/*FOOTER*/
 
 /*TABLET*/
 
