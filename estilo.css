@@ -9,9 +9,13 @@
 }
 
 body{
-background-image: url("images/fundoBody.jpeg");
+/*background-image: url("images/fundoBody.jpeg");*/
+background-color: var(--cor-fundo);
 margin: 0;
-padding: 0;    
+padding: 0;
+color: var(--cor-titulo); 
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 main{
     display: grid;
@@ -28,13 +32,20 @@ header{
     width: 100%;
     position: fixed;
     z-index: 200;
-    padding: 5px 15px;
+    padding: 0px 15px;
     display: grid;
     grid-template-columns: 100px auto;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--cor-destaqueBtn);
+}
+header i{
+    align-self: center;
+    font-size: 25px;
 }
 
 header h3{
     color: var(--cor-destaqueBtn);
+    font-size: 20px;
 }
 header h3 span{
     color: var(--cor-titulo);
@@ -48,6 +59,7 @@ header nav ul{
     list-style: none;
     margin: 5px 0px;
     padding: 0;
+    display:none;
 }
 
 /*INICIO*/
@@ -55,22 +67,107 @@ header nav ul{
 #inicio{
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin-top: 85px;
+    justify-self: center;
 }
 #hero{
     display: grid;
     grid-template-columns: subgrid;
     justify-items: center;
-    background-color: aqua;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#articleHero h2{
+    position: relative;
+    margin-right: 70px;
+    color: var(--cor-titulo);
+}
+
+#articleHero h2 span{
+    
+    font-size: 55px;
+    color: var(--cor-destaqueBorda);
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    z-index: 2;
+}
+
+#articleHero h5{
+    margin-top: 60px;
+    color: var(--cor-titulo);
+}
+#articleHero a{
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+    background-color: var(--cor-destaqueBtn);
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--cor-destaqueBorda);
+    box-shadow: 0px 0px  8px;
+}
+
+#articleHero p{
+    color: var(--cor-paragrafo);
+    padding-bottom: 10px;
+    font-size: 12px;
+    margin-top: -10px;
 }
 
 #imgLogo{
     background-image: url("images/euPerfilComercial.jpeg");
+    background-repeat:no-repeat ;
+    background-size: cover;
     border-radius: 50%;
     width: 220px;
     height: 220px;
+    position: relative;
+}
+
+#imgLogo::after{
+    content: "";
+    border-radius: inherit;
+    width: 225px;
+    height: 225px;
+    position: absolute;
+    top: -7px;
+    left: -8px;
+    background: conic-gradient(#0055FF, #00AAFF, #0A0F1F, #0055FF);
+    z-index: -1;
+    padding: 5px;
+    filter: blur(5px);
+}
+#cardInicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.cardHome{
+    display: grid;
+    background-color: var(--cor-fundo-interno);
+    width: 70%;
+    border: 1px solid var(--cor-destaqueBorda);
+    border-radius: 15px;
+    margin: 15px 0px;
+    box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
+    padding: 0px 5px;
+
+}
+
+.cardHome i{
+    font-size: 35px;
+   padding: 10px 0px;
+   margin-bottom: -15px;
+
+}
+.cardHome p{
+    color: var(--cor-paragrafo);
+    margin-top: 0;
 }
 
 /*SOBRE*/
