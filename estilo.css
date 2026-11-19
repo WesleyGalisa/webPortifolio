@@ -172,6 +172,56 @@ header nav ul{
 
 /*SOBRE*/
 
+#sobre{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 85%;
+    justify-items: center;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+    background-color: var(--cor-fundo-interno);
+    justify-self: center;
+    padding: 20px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--cor-destaqueBorda);
+}
+
+#sobre span{
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+#sobre img{
+    width: 230px;
+    height: 170px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
+    margin: 15px 0px 30px 0px;
+
+}
+
+#sobreMim h3{
+    margin: 0;
+}
+
+#sobreMim p{
+    font-size: 14px;
+    text-align: left;
+}
+
+#sobreMim ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+   
+}
+#sobreMim i{
+  color: var(--cor-destaqueBorda);
+  font-size: 15px;
+  margin-right: 5px;
+}
+
 /*PROJETOS*/
 
 /*CONTATO*/
