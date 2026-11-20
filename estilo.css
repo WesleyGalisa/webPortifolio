@@ -184,6 +184,7 @@ header nav ul{
     padding: 20px 10px;
     border-radius: 15px;
     border: 1px solid var(--cor-destaqueBorda);
+    box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
 }
 
 #sobre span{
@@ -224,9 +225,121 @@ header nav ul{
 
 /*PROJETOS*/
 
+#projetos{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--cor-fundo-interno);
+    justify-self: center;
+    border-radius: 15px;
+    border:  1px solid var(--cor-destaqueBorda);
+    margin-top: 100px;
+    box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
+}
+
+#projetos span{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#projetos h3{
+    margin: 0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cardProjetos{
+    box-shadow: 0px 0px 8px var(--cor-destaqueBordas);
+    border: 1px solid #0055FF;
+    margin: 15px 0px;
+    border-radius: 15px;
+    width: 85%;
+    background-color: #4682B4;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.cardProjetos i{
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+.cardProjetos h5{
+    margin: 0;
+    font-size: 15px;
+}
+.cardProjetos p{
+    font-size: 14px;
+    width: 85%;
+    justify-self: center;
+}
+.cardProjetos a{
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+    background-color: var(--cor-destaqueBtn);
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px var(--cor-paragrafo);
+}
+
 /*CONTATO*/
 
+#contato{
+    background-color: var(--cor-fundo-interno);
+    width: 85%;
+    justify-self: center;
+    margin: 100px 0px 50px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--cor-destaqueBorda);
+    text-align: center;
+    box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
+}
+
+#contato ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: space-between;
+}
+#contato a{
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+    margin: 0px 10px;
+    font-size: 35px;
+}
+#contato h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+#contato p{
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+
+}
+
 /*FOOTER*/
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: space-around;
+    width: 100%;
+    border-top: 1px solid var(--cor-destaqueBtn);
+    padding: 0px 5px;
+    align-items: center;
+}
+
+footer h6{
+    font-size: 8px;
+}
 
 /*TABLET*/
 
