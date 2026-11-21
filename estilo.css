@@ -18,7 +18,8 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 background-image: url("images/fundoBody2.jpeg");
 background-attachment: fixed;
 background-size: cover;
-background-repeat: no-repeatyo;
+background-repeat: no-repeat;
+
 }
 main{
     display: grid;
@@ -34,21 +35,26 @@ header{
     background-color:var(--cor-fundo) ;
     width: 100%;
     position: fixed;
+    margin: 0;
+    top: 0;
+    padding: 0;
     z-index: 200;
-    padding: 0px 15px;
     display: grid;
-    grid-template-columns: 100px auto;
-    justify-content: space-around;
+    grid-template-columns: 100px 200px;
+    justify-content: space-between;
     border-bottom: 1px solid var(--cor-destaqueBtn);
+    align-items: center;
 }
 header i{
-    align-self: center;
+    text-align: right;
+    margin-right: 40px;
     font-size: 25px;
 }
 
 header h3{
     color: var(--cor-destaqueBtn);
     font-size: 20px;
+    margin-left: 20px;
 }
 header h3 span{
     color: var(--cor-titulo);
@@ -336,9 +342,10 @@ footer{
     justify-items: space-around;
     width: 100%;
     border-top: 1px solid var(--cor-destaqueBtn);
-    padding: 0px 5px;
+    padding: 0px;
     align-items: center;
     background-color: var(--cor-fundo);
+    text-align: center;
 }
 
 footer h6{
