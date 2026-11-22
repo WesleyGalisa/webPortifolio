@@ -261,6 +261,11 @@ header nav ul{
     margin-top: 10px;
 }
 
+#cardProjetoSection{
+    display: grid;
+    justify-items: center;
+}
+
 .cardProjetos{
     box-shadow: 0px 0px 8px var(--cor-destaqueBordas);
     border: 1px solid #0055FF;
