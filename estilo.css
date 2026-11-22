@@ -196,6 +196,12 @@ header nav ul{
     border: 1px solid var(--cor-destaqueBorda);
     box-shadow: 0px 0px 8px var(--cor-destaqueBorda);
 }
+#sobre div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
 
 #sobre span{
     font-size: 20px;
