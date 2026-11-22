@@ -401,6 +401,16 @@ footer h6{
     .cardProjetos{
         width: 60%;
     }
+
+    #sobre div{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #sobre div img{
+        width: 260px;
+        height: 180px;
+    }
 }
 
 
