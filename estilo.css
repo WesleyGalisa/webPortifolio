@@ -9,6 +9,26 @@
     --cor-fundoCard: #4964E4;
 }
 
+@keyframes girarLogo{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes deslizarSpan{
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 body{
 /*background-image: url("images/fundoBody.jpeg");*/
 background-color: var(--cor-fundo);
@@ -94,10 +114,11 @@ header nav ul{
     position: relative;
     margin-right: 70px;
     color: var(--cor-titulo);
+    
 }
 
 #articleHero h2 span{
-    
+    animation: deslizarSpan 3s ease-in-out forwards;
     font-size: 55px;
     color: var(--cor-destaqueBorda);
     position: absolute;
@@ -149,6 +170,7 @@ header nav ul{
     z-index: -1;
     padding: 5px;
     filter: blur(5px);
+    animation: girarLogo 4s infinite alternate-reverse;
 }
 #cardInicio{
     display: grid;
