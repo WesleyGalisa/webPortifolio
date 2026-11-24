@@ -86,12 +86,20 @@ header nav{
     position: absolute;
     top: 100%;
     right: 15px;
+    background-color: var(--cor-fundo-interno);
+    padding: 10px 80px;
+    right: 0;
+    display: none;
+    transition: 1s ease-in-out;
 }
 header nav ul{
     list-style: none;
     margin: 5px 0px;
     padding: 0;
-    display:none;
+    display: none;
+    li{
+        padding: 15px 0px;
+    }
 }
 
 /*INICIO*/
