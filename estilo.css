@@ -42,7 +42,7 @@ background-image: url("images/fundoBody3.avif");
 background-attachment: fixed;
 background-size: cover;
 background-repeat: no-repeat;
-
+overflow-x: hidden;
 }
 main{
     display: grid;
@@ -88,18 +88,22 @@ header nav{
     right: 15px;
     background-color: var(--cor-fundo-interno);
     padding: 10px 80px;
-    right: 0;
-    display: none;
-    transition: 1s ease-in-out;
+    right: 0%;
+    top: 101% ;
+    transition:  0.5s;
+    opacity: 0;
 }
 header nav ul{
     list-style: none;
     margin: 5px 0px;
     padding: 0;
-    display: none;
+    
     li{
         padding: 15px 0px;
     }
+}
+nav.menuEsconde{
+    opacity: 1;
 }
 
 /*INICIO*/
@@ -474,6 +478,7 @@ footer h6{
         position: static;
         font-size: 20px;
         margin-left: 10px;
+        background-color: var(--cor-fundo);
     }
     header i{
         color: var(--cor-fundo);

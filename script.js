@@ -6,13 +6,6 @@ menuBar.addEventListener("click", menu );
 
 function menu(){
    
-    if(nav.style.display === "none"){
-        nav.style.display = "block";
-        ul[0].style.display = "block";
-        ul[1].style.display = "block";
-    } else {
-        nav.style.display = "none"; 
-        ul[0].style.display = "none";
-        ul[1].style.display = "none";
-    }
+    nav.classList.toggle("menuEsconde");
+
 }
